@@ -1,7 +1,7 @@
 "use server";
 
 import { prisma } from "@/lib/prisma";
-import nodemailer from "nodemailer";
+
 
 export async function submitContactForm(formData: FormData) {
   try {

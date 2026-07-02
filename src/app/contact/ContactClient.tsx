@@ -29,7 +29,7 @@ const formSchema = z.object({
   timeline: z.string().min(1, "Please select an expected timeline"),
   description: z.string().min(20, "Please provide a detailed description (minimum 20 characters)"),
   consent: z.literal(true, {
-    errorMap: () => ({ message: "You must agree to the privacy policy" })
+    message: "You must agree to the privacy policy"
   }),
 });
 
